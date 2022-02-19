@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color:lightslategray;
+}
+
+#navlist {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    gap: 5px;
+    margin: 10px;
+}
+
+#navlist li:first-child{
+    margin-right: auto;
+}
+
+li {
+    display: flex;
+}
+
+li a {
+    text-decoration: none;
+    padding: 0.3em 1em;
+    background-color: #ffffff;
+    border: 2px solid #7e7e7e;
+}

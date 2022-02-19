@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>SurveyForm</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul id="navlist">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Community</a></li>
+                <li><a href="#">Sign in ></a></li>
+            </ul>
+        </nav>
+        <h1 id="title">Titel</h1>
+        <p id="description">Description</p>
+    </header>
+    <form action="#Link" id="survey-form">
+        <div>
+            <label for="name" id="name-label">Name</label>
+            <input type="text" name="name" id="name" placeholder="Your Name">
+        </div>
+        <div>
+            <label for="email" id="email-label">E-Mail</label>
+            <input type="email" name="email" id="email" placeholder="Your E-Mail">
+        </div>
+        <div>
+            <label for="number" id="number-label">Age</label>
+            <input type="number" name="number" id="number" min="0" max="99" placeholder="Your Age">
+        </div>
+        <div>
+            <label for="dropdown">Choose</label>
+            <select name="select" id="dropdown">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+            </select>
+        </div>
+        <div>
+            <input type="checkbox" value="1" id="value-1">
+            <label for="value-1">Value 1</label>
+        </div>
+        <div>
+            <textarea name="textarea" id="textarea" cols="30" rows="10"></textarea>
+        </div>
+        <div>
+            <button id="submit">Submit</button>
+        </div>
+
+
+
+    </form>
+</body>
+
+</html>
