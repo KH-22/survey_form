@@ -19,39 +19,48 @@
                 <li><a href="#">Sign in ></a></li>
             </ul>
         </nav>
-        <h1 id="title">Titel</h1>
-        <p id="description">Description</p>
+        <h1 id="title">Code Survey Form</h1>
+        <p id="description">Tell us about your Experiences.</p>
     </header>
     <form action="#Link" id="survey-form">
         <div>
-            <label for="name" id="name-label">Name</label>
-            <input type="text" name="name" id="name" placeholder="Your Name">
+            <label for="name" id="name-label">Name</label><br>
+            <input type="text" name="name" id="name" placeholder="Enter your Name">
         </div>
         <div>
-            <label for="email" id="email-label">E-Mail</label>
-            <input type="email" name="email" id="email" placeholder="Your E-Mail">
+            <label for="email" id="email-label">E-Mail</label><br>
+            <input type="email" name="email" id="email" placeholder="Enter your E-Mail" required>
         </div>
         <div>
-            <label for="number" id="number-label">Age</label>
-            <input type="number" name="number" id="number" min="0" max="99" placeholder="Your Age">
+            <label for="number" id="number-label">Age</label><br>
+            <input type="number" name="number" id="number" min="0" max="99" placeholder="Enter your Age (optional)">
         </div>
         <div>
-            <label for="dropdown">Choose</label>
+            <label for="dropdown" id="choose-label">Choose</label><br>
             <select name="select" id="dropdown">
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
+                <option value="1">Beginner</option>
+                <option value="2">Advanced</option>
+                <option value="3">Professional</option>
+                <option value="4">Superhero</option>
             </select>
         </div>
         <div>
-            <input type="checkbox" value="1" id="value-1">
-            <label for="value-1">Value 1</label>
+            <p id="language">Select your Coding Languag/es.</p>
+            <input type="checkbox" value="1" id="html">
+            <label for="value-1">HTML</label>
+        </div>
+        <div>
+            <input type="checkbox" value="1" id="css">
+            <label for="value-1">CSS</label>
+        </div>
+        <div>
+            <input type="checkbox" value="1" id="javascript">
+            <label for="value-1">JavaScript</label>
         </div>
         <div>
             <textarea name="textarea" id="textarea" cols="30" rows="10"></textarea>
         </div>
-        <div>
+        <div id="divsubmit">
             <button id="submit">Submit</button>
         </div>
 
